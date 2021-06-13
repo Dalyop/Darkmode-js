@@ -1,0 +1,150 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    transition: 0.5s;
+}
+a {
+    text-decoration: none;
+    color: cadetblue;
+    padding: 0px 10px
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    font-family: gabriola;
+    font-size: 1.3em;
+    background-color: aliceblue;
+    transition: .5s;
+    padding: 0px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center
+}
+
+
+/*Dark mode slider*/
+.switch{
+    display: inline-block;
+    position: relative;
+    margin-left: auto;
+    width: 50px;
+    height: 24px;
+}
+
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .slider{
+    background-color: #2196f3;
+}
+
+input:focus + .slider{
+    box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before{
+    -webkit-transform: translate(26px);
+    -ms-transform: translate(26px);
+    transform: translate(26px);
+}
+
+.slider.round{
+    border-radius: 34px;
+}
+
+.slider.round:before{
+    border-radius: 50%;
+}
+
+
+
+p {
+    margin: 0px;
+    padding: 0px;
+    text-align: justify;
+}
+
+#darkModeToggle {
+    font: segeo;
+    font-weight: bold;
+    align-items: center;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+.logo > img {
+    padding: 0;
+    margin: 0;
+    width: 50px;
+}
+.logo > span {
+    font-weight: bold;
+}
+.slider-container {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.image-slide {
+    width: 200px;
+    padding: 5px;
+}
+.image-slide > img {
+    width: 100%;
+}
+.description {
+    margin: 5px;
+    padding: 5px;
+}
+
+.search{
+    display: none;
+}
+
+.darkmode {
+    background-color: rgb(39, 25, 25);
+    color: cadetblue;
+    transition: 0.4s ease;
+}
+
+nav.darkmode{
+    background-color: black;
+    color: white;
+}
+
+@media (max-width:720px){
+    
+}
